@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>INFORMATICA</title>
+  <!--Reemplaza "files/tu-archivo.ext" por la ruta real de tu archivo.
+    Si quieres forzar un nombre diferente al descargar, usa download="nombre.zip.-->
+  <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+  <main style="font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; display:flex; align-items:center; justify-content:center; height:100vh; gap:1rem; flex-direction:column;">
+    <h1>Descarga rápida</h1>
+
+    <!-- Enlace con atributo download. Cambia el href al archivo real. -->
+    <a href="C:\Users\myefr\OneDrive\Datos adjuntos\Documentos\yefri informatica\IV PARCIAL\INFORMATICA\ProyectoPromocionInformatica\Archivo.zip" download="Archivo.zip" aria-label="Descargar archivo">
+      <button type="button" style="padding:12px 20px; font-size:16px; cursor:pointer; border-radius:8px; border:1px solid #222; background:#f3f3f3;">
+        Descargar archivo
+      </button>
+    </a>
+
+    <!-- Texto útil si el navegador no soporta download -->
+    <p style="opacity:0.8; font-size:14px; max-width:36ch; text-align:center;">
+      Si la descarga no inicia automáticamente, haz clic derecho en el enlace y elige "Guardar enlace como..." o comprueba la ruta en el atributo <code>href</code>.
+    </p>
+
+    <!-- Nota para desarrollador -->
+    <!-- 
+      - Si el archivo está en otra carpeta, asegúrate de usar la ruta correcta (p. ej. /descargas/miarchivo.zip).
+      - Para servir dinámicamente el archivo desde backend, apunta href al endpoint que genera o entrega el archivo (ej. /download?id=123).
+      - Si necesitas que el botón ejecute lógica antes de descargar, dime y te doy la versión con JS.
+    -->
+  </main>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
